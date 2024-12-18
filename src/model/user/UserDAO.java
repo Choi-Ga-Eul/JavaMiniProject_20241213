@@ -89,4 +89,28 @@ public class UserDAO {
 
         return userDTO;
     }
+
+    public UserDTO getUser(int user_id){
+        UserDTO userDTO = null;
+        String sql = "SELECT * FROM user WHERE user_id = ?";
+
+        try{
+            pstmt = connection.prepareStatement(sql);
+            pstmt.setInt(1, user_id);
+            rs = pstmt.executeQuery();
+
+            if(rs.next()){
+                userDTO = new UserDTO();
+
+                userDTO.setUser_id(rs.getInt(1));
+                userDTO.setUserName(rs.getString(2));
+                userDTO.setId(rs.getString(3));
+                userDTO.setPassword(rs.getString(4));
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage() + "\n in getUser() of UserDAO");
+        }
+
+        return userDTO;
+    }
 }

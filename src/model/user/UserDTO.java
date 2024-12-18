@@ -6,6 +6,10 @@ public class UserDTO {
     private String id;
     private String password;
 
+    public UserDTO(){
+
+    }
+
     public UserDTO(int user_id, String userName, String id, String password){
         this.user_id = user_id;
         this.userName = userName;

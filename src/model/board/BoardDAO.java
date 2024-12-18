@@ -28,13 +28,16 @@ public class BoardDAO {
 
     public int write_board(int user_id, String title, String contents){
         int result = 0;
-        String sql = "INSERT INTO board (title, contents, user_id) VALUES (?, ?, ?)";
+        String sql = "INSERT INTO board (board_id, title, contents, user_id) VALUES (?, ?, ?, ?)";
+
+        int board_id = read_boardList().size() + 1;
 
         try{
             pstmt = connection.prepareStatement(sql);
-            pstmt.setString(1, title);
-            pstmt.setString(2, contents);
-            pstmt.setInt(3, user_id);
+            pstmt.setInt(1, board_id);
+            pstmt.setString(2, title);
+            pstmt.setString(3, contents);
+            pstmt.setInt(4, user_id);
 
             result = pstmt.executeUpdate();
         }catch(SQLException e){

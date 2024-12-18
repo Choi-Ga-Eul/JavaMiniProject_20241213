@@ -32,5 +32,7 @@ public class UserController {
         return result;
     }
 
-
+    public UserDTO getUser(int user_id){
+        return UserDAO.getInstance().getUser(user_id);
+    }
 }
