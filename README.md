@@ -32,4 +32,4 @@
 ---
 
 # 7.프로젝트 실행 결과를 녹화
-> ![시연 영상](https://github.com/Choi-Ga-Eul/JavaMiniProject_20241213/blob/main/Demonstration%20video%20-%20Clipchamp%EB%A1%9C%20%EC%A0%9C%EC%9E%91.mp4)
+> ![시연 영상](https://github.com/Choi-Ga-Eul/JavaMiniProject_20241213/blob/main/Demonstration-video.gif)
