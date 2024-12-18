@@ -7,7 +7,7 @@
 
     
 # 3.프로젝트 개발 기간
-
+>> 2024.12.13 ~ 2024.12.15
 
 # 4.프로젝트 구현 기능
   - 회원가입, 로그인
@@ -21,7 +21,7 @@
 
     
 # 6.프로젝트 ERD Diagram
-  - 
+>> ![Database_ERD_Diagram](https://github.com/Choi-Ga-Eul/JavaMiniProject_20241213/blob/main/Database_ERD_Diagram.png)
 
 
 # 7.프로젝트 실행 결과를 녹화
